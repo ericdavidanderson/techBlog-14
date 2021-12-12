@@ -39,7 +39,7 @@ router.get("/:id", (req, res) => {
   })
     .then((dbUser) => {
       if (!dbUser) {
-        res.status(404).json({ message: "No user found with this id" });
+        res.status(404).json({ message: "No post by this id found." });
         return;
       }
       res.json(dbUser);
@@ -79,13 +79,13 @@ router.post("/login", (req, res) => {
   })
     .then((dbUser) => {
       if (!dbUser) {
-        res.status(400).json({ message: "No user with that username!" });
+        res.status(400).json({ message: "username does not exist." });
         return;
       }
       const validPassword = dbUser.checkPassword(req.body.password);
 
       if (!validPassword) {
-        res.status(400).json({ message: "Incorrect password!" });
+        res.status(400).json({ message: "This password is incorrect." });
         return;
       }
       req.session.save(() => {
@@ -121,7 +121,7 @@ router.put("/:id", (req, res) => {
   })
     .then((dbUser) => {
       if (!dbUser[0]) {
-        res.status(404).json({ message: "No user found with this id" });
+        res.status(404).json({ message: "user id not found" });
         return;
       }
       res.json(dbUser);
