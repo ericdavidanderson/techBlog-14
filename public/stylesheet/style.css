@@ -1,9 +1,9 @@
          :root {
-                      --primary: #ccdad1;
-                      --secondary: #dce9d5;
-                      --tertiary: #788585;
-                      --light-dark: #a1a0a1;
-                      --dark: #201110;
+                      --primary: #9eb6aa;
+                      --secondary: #3d413a;
+                      --tertiary: #6ee9e9;
+                      --light-dark: #694b69;
+                      --dark: #5f2521;
                       --border-radius: .3rem;
                   }
                   
@@ -15,7 +15,7 @@
                       background-color: var(--primary);
                       margin: 0;
                       padding: 0;
-                      font-family: "IBM Plex Sans", sans-serif;
+                      font-family: "Sans", sans-serif;
                       color: var(--dark);
                       line-height: 1.5;
                       font-size: 24px;
@@ -34,13 +34,13 @@
                   
                   .link-color {
                       color: var(--tertiary);
-                      padding: 10px;
-                      margin: 10px
+                      padding: 13px;
+                      margin: 13px
                   }
                   
                   main {
-                      margin: 20px auto;
-                      width: 94%;
+                      margin: 18px auto;
+                      width: 92%;
                   }
                   
                   .wrapper {
@@ -63,7 +63,7 @@
                       display: block;
                       margin: 5px 0;
                       border-radius: var(--border-radius);
-                      color: white;
+                      color: rgb(94, 91, 91);
                       border: none;
                       outline: none;
                       background-color: var(--light-dark);
@@ -150,29 +150,29 @@
                   }
                   
                   .icon-danger {
-                      color: rgb(255, 70, 70);
+                      color: rgb(212, 33, 33);
                   }
                   
                   .icon-success {
-                      color: rgb(29, 153, 255);
+                      color: rgb(49, 233, 33);
                   }
-                  /* CARDS */
+                 
                   
                   .card {
                       margin: 0 0 20px 0;
-                      border: 2px solid var(--dark);
+                      border: 3px solid var(--dark);
                       border-radius: var(--border-radius);
                   }
                   
                   .card-header {
                       color: var(--primary);
                       background-color: var(--dark);
-                      padding: 1%;
+                      padding: 3%;
                       border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
                   }
                   
                   .card-body {
-                      padding: 1%;
+                      padding: 3%;
                   }
                   
                   h4 {
